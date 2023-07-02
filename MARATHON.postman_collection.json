@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "e8a59c34-893b-4773-89ee-ba4b313130b6",
+		"name": "MARATHON",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4003307"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"tipo\": \"2\",\n    \"ruc\": \"20600892470\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "backend",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://wsruc.com/Ruc2WS_JSON.php?tipo=2&ruc=20600892470",
+					"protocol": "http",
+					"host": [
+						"wsruc",
+						"com"
+					],
+					"path": [
+						"Ruc2WS_JSON.php"
+					],
+					"query": [
+						{
+							"key": "tipo",
+							"value": "2"
+						},
+						{
+							"key": "ruc",
+							"value": "20600892470"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
